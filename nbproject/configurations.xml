@@ -4,6 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>src/atom.h</itemPath>
+      <itemPath>src/atom_base.h</itemPath>
+      <itemPath>src/atom_factory.h</itemPath>
+      <itemPath>src/atom_list.h</itemPath>
+      <itemPath>src/atom_mdat.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +17,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>src/atom_base.cpp</itemPath>
+      <itemPath>src/atom_factory.cpp</itemPath>
+      <itemPath>src/atom_list.cpp</itemPath>
+      <itemPath>src/atom_mdat.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -36,6 +45,24 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="src/atom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_base.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_base.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_factory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_factory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_list.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_mdat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_mdat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -59,6 +86,24 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/atom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_base.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_base.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_factory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_factory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_list.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/atom_mdat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/atom_mdat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>

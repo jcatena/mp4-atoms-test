@@ -11,3 +11,8 @@ Boost library has been chosen to help with general needs and some specific requi
 - Endian conversions will be needed when the architecture endianess differ from mp4 fields endianess.
 - The bonus 2 solution requires xml deserialization.
 
+## external dependencies
+
+### boost
+sudo apt-get install libboost-all-dev
+

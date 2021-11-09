@@ -35,6 +35,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/src/atom_base.o \
+	${OBJECTDIR}/src/atom_factory.o \
+	${OBJECTDIR}/src/atom_list.o \
+	${OBJECTDIR}/src/atom_mdat.o \
 	${OBJECTDIR}/src/main.o
 
 
@@ -61,6 +65,26 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/src/atom_base.o: src/atom_base.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/atom_base.o src/atom_base.cpp
+
+${OBJECTDIR}/src/atom_factory.o: src/atom_factory.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/atom_factory.o src/atom_factory.cpp
+
+${OBJECTDIR}/src/atom_list.o: src/atom_list.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/atom_list.o src/atom_list.cpp
+
+${OBJECTDIR}/src/atom_mdat.o: src/atom_mdat.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/atom_mdat.o src/atom_mdat.cpp
 
 ${OBJECTDIR}/src/main.o: src/main.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
