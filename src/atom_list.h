@@ -12,7 +12,7 @@ class atom_list : public atom_base {
 public:
     atom_list(const atom_size& size, const atom_type& type);
     virtual ~atom_list();
-    atom_result read(std::streambuf* in);
+    atom_result read(std::istream* s);
 private:
 
 };

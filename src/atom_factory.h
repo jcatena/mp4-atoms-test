@@ -12,7 +12,7 @@ class atom_factory {
 public:
     atom_factory();
     virtual ~atom_factory();
-    static atom_result read(std::streambuf* in);
+    static atom_result read(std::istream* s);
 private:
 };
 

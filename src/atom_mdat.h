@@ -12,7 +12,7 @@ class atom_mdat : public atom_base {
 public:
     atom_mdat(const atom_size& size, const atom_type& type);
     virtual ~atom_mdat();
-    atom_result read(std::streambuf* in);
+    atom_result read(std::istream* s);
 };
 
 #endif /* ATOM_MDAT_H */

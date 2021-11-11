@@ -44,6 +44,20 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/lib</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>/usr/local/lib</pElem>
+          </linkerDynSerch>
+          <linkerDepDynSerchKind>3</linkerDepDynSerchKind>
+          <linkerLibItems>
+            <linkerLibFileItem>/usr/local/lib/libPocoNet.so</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libPocoFoundation.so</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libPocoNetSSL.so</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="src/atom.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -85,6 +99,20 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/lib</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>/usr/local/lib</pElem>
+          </linkerDynSerch>
+          <linkerDepDynSerchKind>3</linkerDepDynSerchKind>
+          <linkerLibItems>
+            <linkerLibFileItem>/usr/local/lib/libPocoNet.so</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libPocoFoundation.so</linkerLibFileItem>
+            <linkerLibFileItem>/usr/local/lib/libPocoNetSSL.so</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="src/atom.h" ex="false" tool="3" flavor2="0">
       </item>

@@ -56,11 +56,17 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L/usr/local/lib -Wl,-rpath,'/usr/local/lib' /usr/local/lib/libPocoNet.so /usr/local/lib/libPocoFoundation.so /usr/local/lib/libPocoNetSSL.so
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test: /usr/local/lib/libPocoNet.so
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test: /usr/local/lib/libPocoFoundation.so
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test: /usr/local/lib/libPocoNetSSL.so
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
@@ -97,6 +103,8 @@ ${OBJECTDIR}/src/main.o: src/main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} -r ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libPocoNet.so ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libPocoFoundation.so ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libPocoNetSSL.so
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mp4-atoms-test
 
 # Subprojects
 .clean-subprojects:
